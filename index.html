@@ -31,22 +31,22 @@ select#dipartment, select#doctor, select#custom, #dStart, #dEnd { background-col
 
 <div class="card" id="social"><h2>Quick Links</h2>
 <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
-<a href="https://www.blogger.com"> <img height="16" width="16" src='http://www.google.com/s2/favicons?domain=https://www.blogger.com'/>  Blogger</a>
-<a href="https://www.youtube.com"><img height="16" width="16" src='http://www.google.com/s2/favicons?domain=https://www.youtube.com'/>  Youtube</a>
+<a href="https://www.blogger.com">Blogger</a>
+<a href="https://www.youtube.com">Youtube</a>
 </div>
 
 <div class="card"><h2>Social Network</h2>
-<a href="https://mail.google.com/mail/u/0/#inbox"> <img height="16" width="16" src='http://www.google.com/s2/favicons?domain=https://mail.google.com/mail/u/0/#inbox'/>  Gmail</a>
-<a href="https://www.blogger.com"> <img height="16" width="16" src='http://www.google.com/s2/favicons?domain=https://www.blogger.com'/>  Blogger</a>
-<a href="https://www.youtube.com"><img height="16" width="16" src='http://www.google.com/s2/favicons?domain=https://www.youtube.com'/>  Youtube</a>
+<a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
+<a href="https://www.blogger.com">Blogger</a>
+<a href="https://www.youtube.com">Youtube</a>
 </div>
 
 </div>
 
 <script>
-var c = document.querySelector('a').href;
-var a = document.querySelector('a').innerHTML;
-document.querySelector('a').innerHTML = '<img height="16" width="16" src="http://www.google.com/s2/favicons?domain=https://mail.google.com/mail/u/0/#inbox"/> '+a;
+document.querySelectorAll('a').forEach( e => {
+var name = e.innerHTML;
+e.innerHTML = '<img height="16" width="16" src="http://www.google.com/s2/favicons?domain='+e.href+'"/> '+name;	});
 </script>
 
 </body>
